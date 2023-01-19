@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS_HomeWorks6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <input
+            class="form-control text-center"
+            type="number"
+            id="number"
+            placeholder="nhập số n"
+          />
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="themSo" type="button">
+            thêm số
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 1: tính tổng</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="tinhTong" type="button">
+            Tính Tổng
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result1-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result1"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 2: đếm số dương</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="demSo" type="button">
+            Đếm Số
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result2-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result2"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 3: tìm số nhỏ nhất</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="soNhoNhat" type="button">
+            tìm số nhỏ nhất
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result3-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result3"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 4: tìm số dương nhỏ nhất</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="soDuongNhoNhat" type="button">
+            tìm số dương nhỏ nhất
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result4-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result4"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 5: tìm số chẳn cuối cùng</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="soChanCuoiCung" type="button">
+            số chẳn cuối cùng
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result5-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result5"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 6: đổi chổ</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="form-group col-sm-12 text-center">
+          <div class="form-group col-sm-4 mx-auto">
+            <input
+              class="form-control text-center"
+              type="number"
+              id="numberX"
+              placeholder="nhập vị trí số 1"
+            />
+          </div>
+          <div class="form-group col-sm-4 mx-auto">
+            <input
+              class="form-control text-center"
+              type="number"
+              id="numberY"
+              placeholder="nhập vị trí số 2"
+            />
+          </div>
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="doiCho" type="button">
+            đổi chổ
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result6-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result6"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 7: sắp xếp tăng dần</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="sapXep" type="button">
+            sắp xếp
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result7-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result7"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 8: tìm số nguyên tố đầu tiên</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="soNguyenTo" type="button">
+            tìm số nguyên tố đầu tiên
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result8-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result8"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 9: Đếm số nguyên</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="form-group col-sm-4 mx-auto">
+          <input
+            class="form-control text-center"
+            type="number"
+            id="numberB9"
+            placeholder="nhập số n"
+          />
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="themSoB9" type="button">
+            thêm số
+          </button>
+        </div>
+        <div class="text-center col-sm-4 mx-auto alert alert-success mt-3">
+          <p id="resultNumberB9"></p>
+        </div>
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="demSoNguyen" type="button">
+            đếm số nguyên
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result9-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result9"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <h1 class="mx-auto text-center">bài 10: so sánh số lượng âm dương</h1>
+    <div class="container mx-auto mt-5">
+      <div class="row">
+        <div class="text-center col-sm-12 mx-auto">
+          <button class="btn btn-primary" id="soSanh" type="button">
+            so sánh
+          </button>
+        </div>
+        <div
+          style="display: none"
+          id="result10-wrapper"
+          class="text-center col-sm-4 mx-auto alert alert-success mt-3"
+        >
+          <p id="result10"></p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
